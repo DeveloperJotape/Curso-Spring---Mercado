@@ -10,34 +10,35 @@ public class Produto {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long id;
+	private Long idProduto;
 	
 	private String nomeProduto;
-	private String categoria;
-	private Double value;
+	private String categoriaProduto;
+	private Double valorProduto;
 	
-	public Long getId() {
-		return id;
+	public Long getIdProduto() {
+		return idProduto;
 	}
-	public void setId(Long id) {
-		this.id = id;
+	public void setIdProduto(Long idProduto) {
+		this.idProduto = idProduto;
 	}
 	public String getNomeProduto() {
 		return nomeProduto;
 	}
-	public void setNome(String nomeProduto) {
+	public void setNomeProduto(String nomeProduto) {
 		this.nomeProduto = nomeProduto;
 	}
-	public String getCategoria() {
-		return categoria;
+	public String getCategoriaProduto() {
+		return categoriaProduto;
 	}
-	public void setCategoria(String categoria) {
-		this.categoria = categoria;
+	public void setCategoriaProduto(String categoriaProduto) {
+		this.categoriaProduto = categoriaProduto;
 	}
-	public Double getValue() {
-		return value;
+	public Double getValorProduto() {
+		return valorProduto;
 	}
-	public void setValue(Double value) {
-		this.value = value;
+	public void setValorProduto(Double valorProduto) {
+		this.valorProduto = valorProduto;
 	}
+		
 }
