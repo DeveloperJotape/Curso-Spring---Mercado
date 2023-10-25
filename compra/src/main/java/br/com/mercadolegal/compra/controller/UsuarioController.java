@@ -28,7 +28,7 @@ public class UsuarioController {
 		this.usuarioRepository = usuarioRepository;
 	}
 	
-	//Retorna TODOS os registros (Metodo POST)
+	//Retorna TODOS os registros (Metodo GET)
 	@GetMapping
 	public List<UsuarioPojo> getAll() {
 		List<Usuario> listUsuario = usuarioRepository.findAll();
